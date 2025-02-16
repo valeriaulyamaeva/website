@@ -1,0 +1,263 @@
+:root {
+    --padding-small: 0.625rem;
+    --padding-medium: 1rem;
+    --padding-large: 2rem;
+    --font-size-medium: 1rem;
+    --margin-small: 0.625rem;
+    --margin-medium: 1rem;
+    --margin-large: 1.25rem;
+    --color-primary: #000;
+    --color-secondary: #fff;
+    --color-accent: #ff7e5f;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin-left: 20%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: var(--padding-large);
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    margin-left: 10%;
+}
+
+.photo {
+    width: 45%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    width:fit-content;
+    padding: 1rem 2.5rem;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 4rem;
+}
+
+.btn:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.icon-btn {
+    width: 1.5rem;
+    margin-left: var(--margin-small);
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.c{
+    font-size:1.15rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.icon {
+    width: 1.5rem;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        padding: var(--padding-medium);
+        margin-left: 0;
+    }
+
+    .info {
+        margin-left: 10%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 3;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .photo{
+        padding: 0.5rem;
+    }
+
+    .btn{
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .c{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .main-content{
+        align-items: flex-start;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .info {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 3rem
+    }
+
+    .photo {
+        max-width: 80%;
+    }
+
+    h1{
+        margin-bottom: 2rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn{
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .c{
+        font-size: 1.5rem;
+    }
+
+    .icon{
+        width: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    body{
+        margin-left: 0;
+    }
+
+    .main-content {
+        margin-top: 3rem;
+        margin-left: 0;
+        padding: var(--padding-medium);
+    }
+
+    .info{
+        padding: 0;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        column-gap: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: var(--padding-small);
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .btn{
+        font-size: 1rem;
+        padding: 0.75rem 2rem;
+    }
+
+    .photo {
+        max-width: 70%;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .c{
+        font-size: 1rem;
+    }
+
+    .icon{
+        width: 1.5rem;
+    }
+}
