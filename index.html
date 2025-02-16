@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="../styles/styles.css"> 
+    <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,139 +15,41 @@
     <aside class="sidebar">
         <div class="logo">Jac.</div>
         <nav class="menu">
-            <a href="pages/main.html" class="menu-item">Главная</a>
-            <a href="index.html" class="menu-item active">О себе</a>
-            <a href="pages/services.html" class="menu-item">Услуги</a>
-            <a href="pages/works.html" class="menu-item">Мои работы</a>
-            <a href="pages/contact.html" class="menu-item">Контакты</a>
+            <a href="main.html" class="menu-item active">Главная</a>
+            <a href="../index.html" class="menu-item">О себе</a>
+            <a href="services.html" class="menu-item">Услуги</a>
+            <a href="works.html" class="menu-item">Мои работы</a>
+            <a href="contact.html" class="menu-item">Контакты</a>
         </nav>
         <div class="social-icons">
-            <a href="https://www.behance.net/" target="_blank"><img src="assets/images/Goggle.png" alt="Behance"></a>
-            <a href="https://dribbble.com/" target="_blank"><img src="assets/images/icon.png" alt="Dribble"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/Instagram.png" alt="Instagram"></a>
+            <a href="https://www.behance.net/" target="_blank"><img src="../assets/images/Goggle.png" alt="Behance"></a>
+            <a href="https://dribbble.com/" target="_blank"><img src="../assets/images/icon.png" alt="Dribble"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/Instagram.png" alt="Instagram"></a>
         </div>
         <div class="copyright">
             <p>Copyright ©2025 Anton Pavlov. All rights reserved.</p>
         </div>
     </aside>
+
     <main class="main-content">
-        <section class="title-section">
-            <h1>Рад тебя видеть!</h1>
-            <h2>ДОБРО ПОЖАЛОВАТЬ...</h2>
-        </section>
-        <div class="hero-info-wrapper">
-            <section class="hero-container">
-                <div class="hero-image">
-                    <img src="assets/images/img_home.png" alt="Антон Павлов">
-                </div>
-                <div class="hero-content">
-                    <h2 class="name">АНТОН ПАВЛОВ</h2>
-                    <p class="subtitle"><span class="bolditalic">Web-дизайнер</span> из <span class="bolditalic">Минска</span></p>
-                    <a href="https://www.linkedin.com/" target="_blank" class="social-link" download>Скачать CV <img src="assets/images/north_east_home.png" alt="Стрелка" class="icon-north-east"></a>
-                </div>
-            </section>            
-        <section class="info-container">
-            <div class="contacts">
-                <div class="contact-item">
-                    <img src="assets/images/Icon_phone.png" alt="Icon Phone" class="icon-info">
-                    <p>+375 33 444 05 05</p>
-                </div>
-                <div class="contact-item">
-                    <img src="assets/images/icon_age.png" alt="Icon Age" class="icon-info">
-                    <p>29 лет</p>
-                </div>
-                <div class="contact-item">
-                    <img src="assets/images/Icon_mail.png" alt="Icon Mail" class="icon-info">
-                    <p>anton360@gmail.com</p>
-                </div>
-                <div class="contact-item">
-                    <img src="assets/images/icon_place.png" alt="Icon Place" class="icon-info">
-                    <p>Минск, Беларусь</p>
+        <div class="content-wrapper">
+            <div class="info">
+                <h1>Я АНТОН ПАВЛОВ...</h1>
+                <h2>Web-дизайнер из Минска</h2>
+                <button class="btn">Давай общаться <img src="../assets/images/north_east.png" alt="Icon" class="icon-btn"></button>
+                <div class="contacts">
+                    <div class="contact">
+                        <img src="../assets/images/Icon_phone.png" alt="Телефон" class="icon">
+                        <a class="c">+375 33 444 05 05</a>
+                    </div>
+                    <div class="contact">
+                        <img src="../assets/images/Icon_mail.png" alt="Email" class="icon">
+                        <a class="c">anton360@gmail.com</a>
+                    </div>
                 </div>
             </div>
-            <div class="info">
-                <div class="info-item">
-                    <div class="info-age">
-                        <h2 class="gradient-text">10+ <span>Лет Опыта...</span></h2>
-                    </div>
-                    <p>
-                        Привет! Я <span class="highlight">Антон Павлов</span>. Я веб-дизайнер и разработчик, который очень увлечен своей работой и предан ей.
-                    </p>
-                </div>
-                <div class="info-item">
-                    <div class="info-age">
-                        <h2 class="gradient-text">14 <span>Клиентов по всему миру...</span></h2>
-                    </div>
-                    <p>
-                        Имея более чем 10-летний опыт работы графическим дизайнером, я приобрел навыки и знания, необходимые для успеха вашего проекта.
-                    </p>
-                </div>
-            </div>            
-            <div class="testimonial">
-                <blockquote>
-                    <img src="assets/images/ri_double-quotes-r.png" alt="Icon Quote" class="icon">
-                    <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin."</span>
-                </blockquote>
-            </div>            
-        </section>
+            <img src="../assets/images/main_img.png" alt="Антон Тавлов" class="photo">
         </div>
-        <footer class="footer">
-            <section class="experience">
-                <div class="experience-container">
-                    <div class="experience-left">
-                        <p class="tagline">Опыт</p>
-                        <h2 class="title">МОЙ ОПЫТ</h2>
-                        <p class="description">
-                            Привет! Я Антон Павлов.
-                        </p>
-                        <p class="description">
-                            Я веб-дизайнер и разработчик, который очень увлечен своей работой и предан ей.
-                        </p>
-                        <a href="https://www.linkedin.com/" target="_blank" class="btn" download>Скачать мое резюме 
-                            <img src="assets/images/north_east.png" alt="Иконка стрелки" class="icon">
-                        </a>
-                    </div>
-                    <div class="experience-right">
-                        <ul class="experience-list">
-                            <li>
-                                <div class="experience-info">
-                                    <div class="line-one">
-                                        <span class="time">-2018 - Present</span>
-                                        <span class="company">EPAM</span>
-                                    </div>
-                                    <div class="line-two">
-                                        <span class="position">LEAD UI/UX DESIGNER</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="experience-info">
-                                    <div class="line-one">
-                                        <span class="time">-2010 - 2018</span>
-                                        <span class="company">IBA Group</span>
-                                    </div>
-                                    <div class="line-two">
-                                        <span class="position">SENIOR UI/UX DESIGNER</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="experience-info">
-                                    <div class="line-one">
-                                        <span class="time">-2006 - 2010</span>
-                                        <span class="company">ISsoft</span>
-                                    </div>
-                                    <div class="line-two">
-                                        <span class="position">JUNIOR UI/UX DESIGNER</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </section>
-        </footer>
     </main>
 </body>
 </html>
