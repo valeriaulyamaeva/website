@@ -3,86 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои работы</title>
+    <meta name="description" content="Просмотрите мои работы в области веб-дизайна, мобильной разработки и UX-дизайна. Профессиональные проекты с детальной проработкой интерфейсов и исследований.">
+    <title>Мои работы — Веб-дизайн, Мобильная разработка, UX/UI проекты</title>
     <link rel="stylesheet" href="../styles/styles.css"> 
     <link rel="stylesheet" href="../styles/works.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <input type="checkbox" id="burger-toggle" class="burger-toggle">
-    <label for="burger-toggle" class="burger-menu">☰</label>
+    <label for="burger-toggle" class="burger-menu" aria-label="Открыть меню">☰</label>
     
     <aside class="sidebar">
-        <div class="logo">Jac.</div>
-        <nav class="menu">
+        <div class="logo" aria-label="Логотип">Jac.</div>
+        <nav class="menu" aria-label="Меню навигации">
             <a href="main.html" class="menu-item">Главная</a>
             <a href="../index.html" class="menu-item">О себе</a>
             <a href="services.html" class="menu-item">Услуги</a>
             <a href="works.html" class="menu-item active">Мои работы</a>
             <a href="contact.html" class="menu-item">Контакты</a>
         </nav>
-        <div class="social-icons">
-            <a href="https://www.behance.net/" target="_blank"><img src="../assets/images/Goggle.png" alt="Behance"></a>
-            <a href="https://dribbble.com/" target="_blank"><img src="../assets/images/icon.png" alt="Dribble"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/Instagram.png" alt="Instagram"></a>
+        <div class="social-icons" aria-label="Социальные сети">
+            <a href="https://www.behance.net/" target="_blank" aria-label="Behance"><img src="../assets/images/Goggle.png" alt="Behance"></a>
+            <a href="https://dribbble.com/" target="_blank" aria-label="Dribble"><img src="../assets/images/icon.png" alt="Dribble"></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><img src="../assets/images/Instagram.png" alt="Instagram"></a>
         </div>
-        <div class="copyright">
+        <footer class="copyright">
             <p>Copyright ©2025 Anton Pavlov. All rights reserved.</p>
-        </div>
+        </footer>
     </aside>
     <main class="main-content">
-        <div class="title-section">
+        <header class="title-section">
             <h1>Мои работы</h1>
             <h2>ПОСЛЕДНИЕ ПРОЕКТЫ</h2>
-        </div>
-        <div class="projects">
-                <div class="project">
-                    <div class="project-content">
-                        <p class="project-category">Web-дизайн</p>
-                        <h3>Дизайн интернет-магазина</h3>
-                        <a href="https://dribbble.com/shots/25543928-Furniture-eCommerce-Website-Header-Exploration" target="_blank" class="project-link">
-                            <span>↗</span>
-                        </a>
-                    </div>
-                    <img src="../assets/images/works_img_1.png" alt="Проект 1" srcset="../assets/images/works_img_1@2x.png 2x">
+        </header>
+        <section class="projects">
+            <article class="project">
+                <div class="project-content">
+                    <p class="project-category">Web-дизайн</p>
+                    <h3>Дизайн интернет-магазина</h3>
+                    <a href="https://dribbble.com/shots/25543928-Furniture-eCommerce-Website-Header-Exploration" target="_blank" class="project-link" aria-label="Посмотреть проект на Dribbble">
+                        <span>↗</span>
+                    </a>
                 </div>
-                <div class="project">
-                    <div class="project-content">
-                        <p class="project-category">Мобильная разработка</p>
-                        <h3>Прототип и интерфейс мобильного банка</h3>
-                        <a href="https://dribbble.com/shots/25546025-Dashboard-Stocks" target="_blank" class="project-link">
-                            <span>↗</span>
-                        </a>
-                    </div>
-                    <img src="../assets/images/works_img_2.png" alt="Проект 2" srcset="../assets/images/works_img_2@2x.png 2x">
+                <img src="../assets/images/works_img_1.png" alt="Дизайн интернет-магазина" width="600" height="400" srcset="../assets/images/works_img_1.png 2x">
+            </article>
+            <article class="project">
+                <div class="project-content">
+                    <p class="project-category">Мобильная разработка</p>
+                    <h3>Прототип и интерфейс мобильного банка</h3>
+                    <a href="https://dribbble.com/shots/25546025-Dashboard-Stocks" target="_blank" class="project-link" aria-label="Посмотреть проект на Dribbble">
+                        <span>↗</span>
+                    </a>
                 </div>
-                <div class="project">
-                    <div class="project-content">
-                        <p class="project-category">UX-кейс</p>
-                        <h3>UI/UX для сайта бренда напитков</h3>
-                        <a href="https://dribbble.com/shots/25521060-Nutless-Monkey-Flavored-Kentucky-Bourbon-Whiskey" target="_blank" class="project-link">
-                            <span>↗</span>
-                        </a>
-                    </div>
-                    <img src="../assets/images/works_img_3.png" alt="Проект 3" srcset="../assets/images/works_img_3@2x.png 2x">
+                <img src="../assets/images/works_img_2.png" alt="Прототип мобильного банка" width="600" height="400" srcset="../assets/images/works_img_2.png 2x">
+            </article>
+            <article class="project">
+                <div class="project-content">
+                    <p class="project-category">UX-кейс</p>
+                    <h3>UI/UX для сайта бренда напитков</h3>
+                    <a href="https://dribbble.com/shots/25521060-Nutless-Monkey-Flavored-Kentucky-Bourbon-Whiskey" target="_blank" class="project-link" aria-label="Посмотреть проект на Dribbble">
+                        <span>↗</span>
+                    </a>
                 </div>
-                <div class="project">
-                    <div class="project-content">
-                        <p class="project-category">Исследование юзеров</p>
-                        <h3>Анализ портала магазина косметики</h3>
-                        <a href="https://dribbble.com/shots/25545713-Skincare-Products-Ecommerce-Web-Design" target="_blank" class="project-link">
-                            <span>↗</span>
-                        </a>
-                    </div>
-                    <img src="../assets/images/works_img_4.png" alt="Проект 4" srcset="../assets/images/works_img_4@2x.png 2x">
+                <img src="../assets/images/works_img_3.png" alt="UI/UX для сайта бренда напитков" width="600" height="400" srcset="../assets/images/works_img_3.png 2x">
+            </article>
+            <article class="project">
+                <div class="project-content">
+                    <p class="project-category">Исследование юзеров</p>
+                    <h3>Анализ портала магазина косметики</h3>
+                    <a href="https://dribbble.com/shots/25545713-Skincare-Products-Ecommerce-Web-Design" target="_blank" class="project-link" aria-label="Посмотреть проект на Dribbble">
+                        <span>↗</span>
+                    </a>
                 </div>
-            </div>
-            <div class="button-container">
-                <a href="https://dribbble.com/" target="_blank" class="btn">
-                    Узнать больше 
-                    <img src="../assets/images/north_east.png" alt="Icon" class="icon">
-                </a>
-            </div>            
+                <img src="../assets/images/works_img_4.png" alt="Анализ портала магазина косметики" width="600" height="400" srcset="../assets/images/works_img_4.png 2x">
+            </article>
+        </section>
+        <div class="button-container">
+            <a href="https://dribbble.com/" target="_blank" class="btn" aria-label="Посмотреть другие работы">
+                Узнать больше 
+                <img src="../assets/images/north_east.png" alt="Иконка" class="icon">
+            </a>
+        </div>            
     </main>
 </body>
 </html>

@@ -87,7 +87,7 @@ body {
 }
 
 .social-icons img {
-    width: 2.5rem;
+    width: 15%;
     height: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
 }

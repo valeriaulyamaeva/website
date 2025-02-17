@@ -25,7 +25,7 @@ body {
 .title-section {
     max-width: 100%;
     background-color: #fff;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
 }
@@ -511,6 +511,8 @@ body {
 }
 
 .icon {
+    width: 12%;
+    height: auto;
     margin-left: 0.625rem;
 }
 
@@ -531,7 +533,6 @@ body {
 
     .icon {
         margin-left: 0.3rem;
-        min-width: 0.5rem;
     }
 }
 

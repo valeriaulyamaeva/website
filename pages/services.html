@@ -3,76 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги</title>
+    <meta name="description" content="Профессиональные услуги в области веб-дизайна, UI/UX дизайна, мобильной разработки и исследования юзеров. Создание адаптивных и удобных интерфейсов для бизнеса.">
+    <meta name="keywords" content="веб-дизайн, UI/UX дизайн, мобильная разработка, исследование юзеров, интерфейсы, адаптивный дизайн, пользовательский опыт">
+    <title>Услуги — Веб-дизайн, UI/UX Дизайн, Мобильная Разработка</title>
     <link rel="stylesheet" href="../styles/styles.css"> 
     <link rel="stylesheet" href="../styles/services.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <input type="checkbox" id="burger-toggle" class="burger-toggle">
-    <label for="burger-toggle" class="burger-menu">☰</label>
+    <label for="burger-toggle" class="burger-menu" aria-label="Открыть меню">☰</label>
     
     <aside class="sidebar">
-        <div class="logo">Jac.</div>
-        <nav class="menu">
+        <div class="logo" aria-label="Логотип">Jac.</div>
+        <nav class="menu" aria-label="Меню навигации">
             <a href="main.html" class="menu-item">Главная</a>
             <a href="../index.html" class="menu-item">О себе</a>
             <a href="services.html" class="menu-item active">Услуги</a>
             <a href="works.html" class="menu-item">Мои работы</a>
             <a href="contact.html" class="menu-item">Контакты</a>
         </nav>
-        <div class="social-icons">
-            <a href="https://www.behance.net/" target="_blank"><img src="../assets/images/Goggle.png" alt="Behance"></a>
-            <a href="https://dribbble.com/" target="_blank"><img src="../assets/images/icon.png" alt="Dribble"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/Instagram.png" alt="Instagram"></a>
+        <div class="social-icons" aria-label="Социальные сети">
+            <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" aria-label="Перейти на Behance">
+                <img src="../assets/images/Goggle.png" alt="Behance" width="32" height="32">
+            </a>
+            <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" aria-label="Перейти на Dribbble">
+                <img src="../assets/images/icon.png" alt="Dribbble" width="32" height="32">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Перейти на Instagram">
+                <img src="../assets/images/Instagram.png" alt="Instagram" width="32" height="32">
+            </a>
         </div>
-        <div class="copyright">
+        <footer class="copyright">
             <p>Copyright ©2025 Anton Pavlov. All rights reserved.</p>
-        </div>
+        </footer>
     </aside>
-    <div class="main-content">
-        <div class="header">
+    
+    <main class="main-content">
+        <header class="header">
             <h1>Услуги</h1>
             <h2>МОИ НАПРАВЛЕНИЯ</h2>
-        </div>
-        <div class="services-container">
-            <div class="service">
-                <div class="service-title-container">
-                    <div class="service-title">· Web ДИЗАЙН</div>
-                </div>
+        </header>
+        
+        <section class="services-container">
+            <article class="service">
+                <header class="service-title-container">
+                    <h3 class="service-title">· Web ДИЗАЙН</h3>
+                </header>
                 <div class="service-desc-container">
-                    <div class="service-desc">Создаю стильные и удобные веб-интерфейсы, разрабатывая адаптивные дизайны. Работаю с типографикой и анимацией, помогая бизнесу выделяться и улучшать пользовательский опыт.</div>
-                    <div class="expand-btn">+</div>
+                    <p class="service-desc">Создаю стильные и удобные веб-интерфейсы, разрабатывая адаптивные дизайны. Работаю с типографикой и анимацией, помогая бизнесу выделяться и улучшать пользовательский опыт.</p>
+                    <button class="expand-btn">+</button>
                 </div>
-            </div>
-            <div class="service">
-                <div class="service-title-container">
-                    <div class="service-title">· UI/UX ДИЗАЙН</div>
-                </div>
+            </article>
+            
+            <article class="service">
+                <header class="service-title-container">
+                    <h3 class="service-title">· UI/UX ДИЗАЙН</h3>
+                </header>
                 <div class="service-desc-container">
-                    <div class="service-desc">Разрабатываю интуитивно понятные и продуманные интерфейсы, создавая удобный пользовательский опыт. Прорабатываю логику взаимодействия, визуальную структуру и анимацию.</div>
-                    <div class="expand-btn">+</div>
+                    <p class="service-desc">Разрабатываю интуитивно понятные и продуманные интерфейсы, создавая удобный пользовательский опыт. Прорабатываю логику взаимодействия, визуальную структуру и анимацию.</p>
+                    <button class="expand-btn">+</button>
                 </div>
-            </div>
-            <div class="service">
-                <div class="service-title-container">
-                    <div class="service-title">· МОБИЛЬНАЯ РАЗРАБОТКА</div>
-                </div>
+            </article>
+            
+            <article class="service">
+                <header class="service-title-container">
+                    <h3 class="service-title">· МОБИЛЬНАЯ РАЗРАБОТКА</h3>
+                </header>
                 <div class="service-desc-container">
-                    <div class="service-desc">Создаю удобные и стильные интерфейсы для мобильных устройств, ориентируясь на адаптивность. Прорабатываю навигацию, анимации и визуальный стиль, чтобы приложения были интуитивными и привлекательными.</div>
-                    <div class="expand-btn">+</div>
+                    <p class="service-desc">Создаю удобные и стильные интерфейсы для мобильных устройств, ориентируясь на адаптивность. Прорабатываю навигацию, анимации и визуальный стиль, чтобы приложения были интуитивными и привлекательными.</p>
+                    <button class="expand-btn">+</button>
                 </div>
-            </div>
-            <div class="service">
-                <div class="service-title-container">
-                    <div class="service-title">· ИССЛЕДОВАНИЕ ЮЗЕРОВ</div>
-                </div>
+            </article>
+            
+            <article class="service">
+                <header class="service-title-container">
+                    <h3 class="service-title">· ИССЛЕДОВАНИЕ ЮЗЕРОВ</h3>
+                </header>
                 <div class="service-desc-container">
-                    <div class="service-desc">Анализирую пользовательский опыт, тестирую прототипы и собираю данные для улучшения интерфейсов и повышения вовлечённости.</div>
-                    <div class="expand-btn">+</div>
+                    <p class="service-desc">Анализирую пользовательский опыт, тестирую прототипы и собираю данные для улучшения интерфейсов и повышения вовлечённости.</p>
+                    <button class="expand-btn">+</button>
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
