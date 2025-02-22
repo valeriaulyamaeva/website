@@ -113,7 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return elements.reduce((closest, child) => {
             const box = child.getBoundingClientRect();
             const offset = y - box.top - box.height / 2;
-
             return offset < 0 && offset > closest.offset ? { offset, element: child } : closest;
         }, { offset: Number.NEGATIVE_INFINITY }).element;
     }
@@ -135,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const services = document.querySelectorAll(".service");
