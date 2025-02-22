@@ -50,10 +50,6 @@ body {
     margin-bottom: 3rem;
 }
 
-.service:hover {
-    transform: scale(1.03)
-}
-
 .service::after {
     content: "";
     display: block;
@@ -74,10 +70,6 @@ body {
 .service-title {
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-.service-title:hover{
-    color: orange;
 }
 
 .service-desc-container {

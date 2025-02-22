@@ -61,10 +61,6 @@ body {
     position: relative;
 }
 
-.project:hover {
-    transform: scale(1.03)
-}
-
 .project img {
     max-width: 55%;
     height: auto;
@@ -116,10 +112,6 @@ body {
     display: inline-block;
     font-size: 3rem;
     line-height: 1;
-}
-
-.project-link:hover span {
-    color: orange;
 }
 
 @media (max-width: 1200px) {
@@ -504,10 +496,6 @@ body {
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #444;
 }
 
 .icon {
