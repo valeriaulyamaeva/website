@@ -255,6 +255,11 @@ input[type="file"] {
     background-color: #4d4e4f;
 }
 
+.editing {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
 @media (max-width: 1024px) {
     .main-content {
         grid-template-columns: 1fr;
