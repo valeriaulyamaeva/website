@@ -140,16 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const services = document.querySelectorAll(".service");
     const serviceTitles = document.querySelectorAll(".service-title");
 
-    services.forEach(service => {
-        service.addEventListener("mouseenter", () => {
-            service.style.transform = "scale(1.05)";
-        });
-
-        service.addEventListener("mouseleave", () => {
-            service.style.transform = "";
-        });
-    });
-
     serviceTitles.forEach(title => {
         title.addEventListener("mouseenter", () => {
             title.style.color = "orange";
