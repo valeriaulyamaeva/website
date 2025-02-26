@@ -105,6 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             projectsContainer.insertBefore(draggingCard, afterElement);
         }
+
+        handleScrolling(e);
     });
 
     function getDragAfterElement(container, y) {
@@ -131,6 +133,26 @@ document.addEventListener("DOMContentLoaded", () => {
                     projectsContainer.appendChild(card);
                 }
             });
+        }
+    }
+
+    function handleScrolling(e) {
+        const containerRect = projectsContainer.getBoundingClientRect();
+        const scrollThreshold = 50;
+        const scrollSpeed = 10;
+
+        if (e.clientY < containerRect.top + scrollThreshold) {
+            projectsContainer.scrollBy(0, -scrollSpeed);
+        }
+        if (e.clientY > containerRect.bottom - scrollThreshold) {
+            projectsContainer.scrollBy(0, scrollSpeed);
+        }
+
+        if (e.clientY < 50) {
+            window.scrollBy(0, -scrollSpeed);
+        }
+        if (e.clientY > window.innerHeight - 50) {
+            window.scrollBy(0, scrollSpeed);
         }
     }
 });
